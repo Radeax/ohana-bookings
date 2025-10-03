@@ -1,120 +1,219 @@
-# Turborepo starter
+# Ohana Bookings Monorepo
 
-This is a community-maintained example. If you experience a problem, please submit a pull request with a fix. GitHub Issues will be closed.
-
-## Using this example
-
-Run the following command:
-
-```bash
-npx create-turbo@latest -e with-nestjs
-```
+Booking management system for Ohana of Polynesia.
 
 ## What's inside?
-
-This Turborepo includes the following packages/apps:
 
 ### Apps and Packages
 
     .
     ├── apps
-    │   ├── api                       # NestJS app (https://nestjs.com).
-    │   └── web                       # Next.js app (https://nextjs.org).
+    │   ├── api                       # NestJS backend API
+    │   └── web                       # Vue 3 + Vite frontend
     └── packages
-        ├── @repo/api                 # Shared `NestJS` resources.
-        ├── @repo/eslint-config       # `eslint` configurations (includes `prettier`)
-        ├── @repo/jest-config         # `jest` configurations
-        ├── @repo/typescript-config   # `tsconfig.json`s used throughout the monorepo
-        └── @repo/ui                  # Shareable stub React component library.
+        ├── @repo/api                 # Shared NestJS resources & types
+        ├── @repo/eslint-config       # ESLint configurations (includes Prettier)
+        ├── @repo/jest-config         # Jest configurations
+        └── @repo/typescript-config   # TypeScript configurations
 
-Each package and application are 100% [TypeScript](https://www.typescriptlang.org/) safe.
+Each package and application is 100% [TypeScript](https://www.typescriptlang.org/) safe.
 
-### Utilities
+### Tech Stack
 
-This `Turborepo` has some additional tools already set for you:
+**Backend:**
+- NestJS - Node.js framework
+- PostgreSQL - Database
+- Redis - Cache & sessions
+- Drizzle ORM - Type-safe database queries
 
-- [TypeScript](https://www.typescriptlang.org/) for static type-safety
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-- [Jest](https://prettier.io) & [Playwright](https://playwright.dev/) for testing
+**Frontend:**
+- Vue 3 - UI framework
+- Vite - Build tool & dev server
+- Pinia Colada - State management & data fetching
+- PrimeVue - UI component library
+- Vue Router - Client-side routing
 
-### Commands
+**Development:**
+- TypeScript - Static type-safety
+- ESLint - Code linting
+- Prettier - Code formatting
+- Jest - Testing framework
+- pnpm - Package manager
+- Turborepo - Monorepo build system
 
-This `Turborepo` already configured useful commands for all your apps and packages.
+**Deployment:**
+- Docker - Containerization
+- Railway - API hosting
+- Cloudflare Pages - Frontend hosting
 
-#### Build
+## Commands
+
+### Build
 
 ```bash
-# Will build all the app & packages with the supported `build` script.
+# Build all apps & packages
 pnpm run build
 
 # ℹ️ If you plan to only build apps individually,
-# Please make sure you've built the packages first.
+# please make sure you've built the packages first.
 ```
 
-#### Develop
+### Develop
 
 ```bash
-# Will run the development server for all the app & packages with the supported `dev` script.
+# Run development servers for all apps & packages
 pnpm run dev
 ```
 
-#### test
+### Test
 
 ```bash
-# Will launch a test suites for all the app & packages with the supported `test` script.
+# Launch test suites for all apps & packages
 pnpm run test
 
-# You can launch e2e testes with `test:e2e`
+# Run e2e tests
 pnpm run test:e2e
-
-# See `@repo/jest-config` to customize the behavior.
 ```
 
-#### Lint
+### Lint
 
 ```bash
-# Will lint all the app & packages with the supported `lint` script.
-# See `@repo/eslint-config` to customize the behavior.
+# Lint all apps & packages
 pnpm run lint
 ```
 
-#### Format
+### Format
 
 ```bash
-# Will format all the supported `.ts,.js,json,.tsx,.jsx` files.
-# See `@repo/eslint-config/prettier-base.js` to customize the behavior.
+# Format all supported files
 pnpm format
 ```
 
-### Remote Caching
+## Development Setup
 
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
+### Prerequisites
 
-Turborepo can use a technique known as [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+- Node.js 18+
+- pnpm 8+
+- Docker & Docker Compose
 
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
+### Getting Started
 
-```bash
-npx turbo login
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd ohana-bookings
+   ```
+
+2. **Install dependencies**
+   ```bash
+   pnpm install
+   ```
+
+3. **Set up environment variables**
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+4. **Start Docker services**
+   ```bash
+   docker compose -f compose.dev.yaml up -d
+   ```
+
+5. **Run development servers**
+   ```bash
+   pnpm dev
+   ```
+
+   Access your apps:
+   - Frontend: http://localhost:5173
+   - API: http://localhost:3000
+   - Database: localhost:5432
+   - Redis: localhost:6379
+
+## Project Structure
+
+```
+ohana-bookings/
+├── apps/
+│   ├── api/                  # NestJS backend
+│   │   ├── src/
+│   │   ├── test/
+│   │   └── package.json
+│   └── web/                  # Vue 3 frontend
+│       ├── src/
+│       ├── public/
+│       └── package.json
+├── packages/
+│   ├── api/                  # Shared backend code
+│   ├── eslint-config/        # Shared ESLint configs
+│   ├── jest-config/          # Shared Jest configs
+│   └── typescript-config/    # Shared TypeScript configs
+├── compose.yaml              # Production Docker setup
+├── compose.dev.yaml          # Development Docker setup
+├── Dockerfile                # Production Dockerfile
+├── Dockerfile.dev            # Development Dockerfile
+├── nginx.conf                # Nginx config for Vue SPA
+├── turbo.json                # Turborepo configuration
+├── pnpm-workspace.yaml       # pnpm workspace configuration
+└── package.json              # Root package.json
 ```
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+## Docker Commands
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
+### Development
 
 ```bash
-npx turbo link
+# Start all services
+docker compose -f compose.dev.yaml up -d
+
+# View logs
+docker compose -f compose.dev.yaml logs -f
+
+# Stop services
+docker compose -f compose.dev.yaml down
+
+# Rebuild after changes
+docker compose -f compose.dev.yaml up -d --build
+```
+
+### Production
+
+```bash
+# Build and start
+docker compose up --build
+
+# Run in background
+docker compose up -d
 ```
 
 ## Useful Links
 
-Learn more about the power of Turborepo:
+**Frameworks & Tools:**
+- [Turborepo](https://turborepo.com/docs) - Monorepo build system
+- [NestJS](https://docs.nestjs.com) - Backend framework
+- [Vue 3](https://vuejs.org/guide/introduction.html) - Frontend framework
+- [Vite](https://vite.dev/guide/) - Build tool
+- [Pinia](https://pinia.vuejs.org/) - State management
+- [PrimeVue](https://primevue.org/) - UI component library
+- [pnpm](https://pnpm.io/) - Package manager
 
-- [Tasks](https://turborepo.com/docs/crafting-your-repository/running-tasks)
-- [Caching](https://turborepo.com/docs/crafting-your-repository/caching)
-- [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching)
-- [Filtering](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters)
-- [Configuration Options](https://turborepo.com/docs/reference/configuration)
-- [CLI Usage](https://turborepo.com/docs/reference/command-line-reference)
+**Development:**
+- [Drizzle ORM](https://orm.drizzle.team/docs/overview) - Database ORM
+- [Vue Router](https://router.vuejs.org/) - Routing
+
+## Remote Caching
+
+Turborepo can use [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling faster builds across your team and CI/CD.
+
+To enable Remote Caching:
+
+```bash
+npx turbo login
+npx turbo link
+```
+
+## License
+
+UNLICENSED

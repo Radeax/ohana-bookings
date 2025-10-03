@@ -28,7 +28,6 @@ playwright-report/
 .vercel
 
 # Build Outputs
-.next/
 out/
 build
 dist
