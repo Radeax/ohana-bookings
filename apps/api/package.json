@@ -16,10 +16,13 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "@knaadh/nestjs-drizzle-postgres": "^1.2.0",
     "@nestjs/common": "^11.0.0",
     "@nestjs/core": "^11.0.0",
     "@nestjs/platform-express": "^11.0.0",
     "@repo/types": "workspace:*",
+    "drizzle-orm": "^0.44.6",
+    "postgres": "^3.4.7",
     "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.1"
   },
