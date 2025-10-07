@@ -1,0 +1,44 @@
+# Dependencies
+node_modules
+npm-debug.log
+yarn-error.log
+pnpm-debug.log*
+
+# Testing
+coverage
+.nyc_output
+test-results/
+playwright-report/
+
+# Build outputs
+out/
+.vercel
+dist
+build
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Git
+.git
+.gitignore
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc
+*.log
+.turbo
+README.md
+.prettierrc.mjs
+.eslintrc.mjs
