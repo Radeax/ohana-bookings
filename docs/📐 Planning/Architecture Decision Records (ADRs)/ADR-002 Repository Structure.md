@@ -146,15 +146,15 @@ ohana-types/        # Shared types as npm package
 ### Risks
 
 - **Monorepo complexity**: Could become unwieldy if many apps added
-    - *Mitigation*: Only API + Frontend in monorepo; everything else separate
+  - _Mitigation_: Only API + Frontend in monorepo; everything else separate
 - **Marketing site duplication**: Might recreate components
-    - *Mitigation*: Acceptable tradeoff; marketing and booking app are very different
+  - _Mitigation_: Acceptable tradeoff; marketing and booking app are very different
 
 ## Follow-up Actions
 
-- [ ]  Initialize `ohana-bookings` monorepo with pnpm workspaces
-- [ ]  Configure Turborepo for caching and parallel execution
-- [ ]  Create `packages/types` for shared API types
-- [ ]  Create `packages/config` for shared ESLint/Tailwind/TS configs
-- [ ]  Set up GitHub Actions CI for monorepo
-- [ ]  Document local development setup in README
+- [ ] Initialize `ohana-bookings` monorepo with pnpm workspaces
+- [ ] Configure Turborepo for caching and parallel execution
+- [ ] Create `packages/types` for shared API types
+- [ ] Create `packages/config` for shared ESLint/Tailwind/TS configs
+- [ ] Set up GitHub Actions CI for monorepo
+- [ ] Document local development setup in README

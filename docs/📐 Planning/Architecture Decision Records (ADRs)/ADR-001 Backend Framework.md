@@ -122,14 +122,14 @@ This is a **solo developer project** with **resume-building** as a secondary goa
 ### Risks
 
 - **Velocity risk**: Boilerplate could slow Phase 1 delivery
-    - *Mitigation*: Use CLI generators, AI assistance, and reference past project
+  - _Mitigation_: Use CLI generators, AI assistance, and reference past project
 - **Complexity creep**: Easy to add unnecessary abstractions
-    - *Mitigation*: Follow "start simple" principle - add complexity only when needed
+  - _Mitigation_: Follow "start simple" principle - add complexity only when needed
 
 ## Follow-up Actions
 
-- [x]  Choose ORM (see ADR-003)
-- [x]  Choose auth strategy (see ADR-006)
-- [ ]  Set up NestJS project scaffold with CLI
-- [ ]  Configure core modules (auth, database, config)
-- [ ]  Establish coding conventions document
+- [x] Choose ORM (see ADR-003)
+- [x] Choose auth strategy (see ADR-006)
+- [ ] Set up NestJS project scaffold with CLI
+- [ ] Configure core modules (auth, database, config)
+- [ ] Establish coding conventions document

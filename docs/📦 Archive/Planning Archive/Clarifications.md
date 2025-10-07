@@ -7,11 +7,11 @@
 **I'm curious - what's driving this switch?**
 
 - Resume building (NestJS more common in enterprise)?
-    - *Yes*
+  - _Yes_
 - Prefer the modular architecture?
-    - *No preference, but I’d like to implement what employers are looking for*
+  - _No preference, but I’d like to implement what employers are looking for_
 - Better ecosystem for your needs?
-    - *I feel like I’ll eventually need to get familiar with NestJS in the future regardless if I learn AdonisJS today. However, if I learn NestJS I don’t think I’ll ever have to use AdonisJS.*
+  - _I feel like I’ll eventually need to get familiar with NestJS in the future regardless if I learn AdonisJS today. However, if I learn NestJS I don’t think I’ll ever have to use AdonisJS._
 
 Understanding your reasoning will help me write a better ADR. Both are excellent choices, but for different reasons:
 
@@ -30,9 +30,9 @@ Understanding your reasoning will help me write a better ADR. Both are excellent
 
 **What's your main reason for preferring NestJS?**
 
-- *More boiler plate but I suspect it becomes less of a hassle as features mature and there’s more copy/pasting.*
+- _More boiler plate but I suspect it becomes less of a hassle as features mature and there’s more copy/pasting._
 - Steeper learning curve but AI might be able to offset this
-- *For the initial velocity , I have a past NestJS project I may be able to reference. AdonisJS I’d be learning everything from scratch.*
+- _For the initial velocity , I have a past NestJS project I may be able to reference. AdonisJS I’d be learning everything from scratch._
 
 ---
 
@@ -45,14 +45,14 @@ Great question! Here's my take:
 `Option A: Focused Monorepo (MY RECOMMENDATION)
 ohana/
 ├── apps/
-│   ├── api/           # NestJS backend
-│   └── admin/         # Vue SPA (booking admin dashboard)
+│ ├── api/ # NestJS backend
+│ └── admin/ # Vue SPA (booking admin dashboard)
 ├── packages/
-│   ├── types/         # Shared TypeScript types
-│   └── config/        # Shared configs (ESLint, Tailwind)
+│ ├── types/ # Shared TypeScript types
+│ └── config/ # Shared configs (ESLint, Tailwind)
 └── turbo.json
 
-ohana-marketing/       # SEPARATE REPO
+ohana-marketing/ # SEPARATE REPO
 └── Marketing website (Astro/Nuxt/whatever)`
 
 **Why separate the marketing site?**
@@ -96,7 +96,7 @@ ohana/
 
 **Does this make sense to you?**
 
-- *Yes. Should I call the frontend of the booking app “admin” or is there a better name? “web”, “ui”, “admin”, or another name?*
+- _Yes. Should I call the frontend of the booking app “admin” or is there a better name? “web”, “ui”, “admin”, or another name?_
 
 ---
 
@@ -126,7 +126,7 @@ Hybrid is fine, but let me clarify:
 
 **Agree?**
 
-- *Agree*
+- _Agree_
 
 ---
 
@@ -140,12 +140,12 @@ Hybrid is fine, but let me clarify:
 
 typescript
 
-`*// Pinia Colada handles both server state AND global UI state*
+`_// Pinia Colada handles both server state AND global UI state_
 import { useQuery } from '@pinia/colada'
 
 const { data, isLoading } = useQuery({
-  key: ['bookings'],
-  query: () => api.getBookings()
+key: ['bookings'],
+query: () => api.getBookings()
 })`
 
 **Pros:**
@@ -175,7 +175,7 @@ const { data, isLoading } = useQuery({
 
 **My recommendation: Pinia Colada.** Since you're already in Vue ecosystem and it's a newer, cleaner API. Eduardo knows what he's doing.
 
-- *Pinia Colada*
+- _Pinia Colada_
 
 ---
 
@@ -226,7 +226,7 @@ Let me map your workflows:
 
 **Your gut feeling?**
 
-- *Ok, let’s add XState later*
+- _Ok, let’s add XState later_
 
 ---
 
@@ -246,13 +246,13 @@ Let's create ADRs in this order:
 **Before I start writing these, please answer:**
 
 1. **Why NestJS over AdonisJS?** (I need your reasoning for ADR-001)
-    1. *We can discuss this further if you recommend it. I initially picked AdonisJS to stick to a standard but NestJS might be ok.*
+   1. _We can discuss this further if you recommend it. I initially picked AdonisJS to stick to a standard but NestJS might be ok._
 2. **Do you agree with separate marketing site repo?** (for ADR-002)
-    1. *Yes*
+   1. _Yes_
 3. **Do you want to start with XState for inquiry flow, or add it later?** (for ADR-006)
-    1. *Later*
+   1. _Later_
 4. **Are you building a multi-step wizard for booking creation, or simple forms?** (affects XState decision)
-    1. *Initially, no*
+   1. _Initially, no_
 
 Once you answer these, I'll write proper ADRs with:
 

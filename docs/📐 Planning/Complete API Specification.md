@@ -63,9 +63,9 @@ json
 
 "phone": "+15551234567",
 
-"roles": ["coordinator"],           // Array: can have multiple roles
+"roles": ["coordinator"], // Array: can have multiple roles
 
-"performer_id": null                 // Link to performer record if user performs
+"performer_id": null // Link to performer record if user performs
 }`
 
 ---
@@ -124,16 +124,16 @@ json
 
 http
 
-`POST   /api/inquiries
-GET    /api/inquiries                # List with filters
-GET    /api/inquiries/:id
-PATCH  /api/inquiries/:id
-DELETE /api/inquiries/:id            # Soft delete
+`POST /api/inquiries
+GET /api/inquiries # List with filters
+GET /api/inquiries/:id
+PATCH /api/inquiries/:id
+DELETE /api/inquiries/:id # Soft delete
 
-POST   /api/inquiries/:id/quote
-GET    /api/inquiries/:id/quotes
-PATCH  /api/inquiries/:id/status
-POST   /api/inquiries/:id/convert-to-booking  # Manual booking creation`
+POST /api/inquiries/:id/quote
+GET /api/inquiries/:id/quotes
+PATCH /api/inquiries/:id/status
+POST /api/inquiries/:id/convert-to-booking # Manual booking creation`
 
 **Query Parameters for GET /api/inquiries:**
 
@@ -214,18 +214,18 @@ Frontend then calls `POST /api/inquiries/:id/convert-to-booking` to complete.
 
 http
 
-`POST   /api/bookings
-GET    /api/bookings
-GET    /api/bookings/:id
-PATCH  /api/bookings/:id
-DELETE /api/bookings/:id             # Cancel booking
+`POST /api/bookings
+GET /api/bookings
+GET /api/bookings/:id
+PATCH /api/bookings/:id
+DELETE /api/bookings/:id # Cancel booking
 
-POST   /api/bookings/:id/performers
+POST /api/bookings/:id/performers
 DELETE /api/bookings/:id/performers/:performer_id
 
-PATCH  /api/bookings/:id/deposit
-PATCH  /api/bookings/:id/final-payment
-PATCH  /api/bookings/:id/invoice`
+PATCH /api/bookings/:id/deposit
+PATCH /api/bookings/:id/final-payment
+PATCH /api/bookings/:id/invoice`
 
 **POST /api/bookings**
 
@@ -297,13 +297,13 @@ json
 
 http
 
-`GET    /api/performers
-GET    /api/performers/:id
-POST   /api/performers
-PATCH  /api/performers/:id
-DELETE /api/performers/:id           # Deactivate
+`GET /api/performers
+GET /api/performers/:id
+POST /api/performers
+PATCH /api/performers/:id
+DELETE /api/performers/:id # Deactivate
 
-GET    /api/performers/availability?date=YYYY-MM-DD`
+GET /api/performers/availability?date=YYYY-MM-DD`
 
 **POST /api/performers**
 
@@ -413,11 +413,11 @@ json
 
 http
 
-`GET    /api/reports/business-financials?start_date=YYYY-MM-DD&end_date=YYYY-MM-DD
+`GET /api/reports/business-financials?start_date=YYYY-MM-DD&end_date=YYYY-MM-DD
 
-GET    /api/reports/performer-earnings/:performerId?start_date=...&end_date=...
+GET /api/reports/performer-earnings/:performerId?start_date=...&end_date=...
 
-GET    /api/reports/all-performers-earnings?start_date=...&end_date=...`
+GET /api/reports/all-performers-earnings?start_date=...&end_date=...`
 
 **GET /api/reports/business-financials** (Admin Only)
 
@@ -509,11 +509,11 @@ json
 
 "gigs_count": 12,
 
-"gross_pay": 2400.00,        // Total payouts
+"gross_pay": 2400.00, // Total payouts
 
-"personal_expenses": 650.00,  // Gas, food, etc.
+"personal_expenses": 650.00, // Gas, food, etc.
 
-"net_take_home": 1750.00      // gross - expenses
+"net_take_home": 1750.00 // gross - expenses
 
 },
 
@@ -581,7 +581,7 @@ json
 
 "gross_pay": 1800.00,
 
-"personal_expenses": 0.00,        // Not logged
+"personal_expenses": 0.00, // Not logged
 
 "net_take_home": 1800.00
 
@@ -598,7 +598,7 @@ json
 }
 
 }
-  `}
+`}
 }`
 
 ---
@@ -607,13 +607,13 @@ json
 
 http
 
-`GET    /api/overhead-expenses
+`GET /api/overhead-expenses
 
-GET    /api/overhead-expenses/:id
+GET /api/overhead-expenses/:id
 
-POST   /api/overhead-expenses
+POST /api/overhead-expenses
 
-PATCH  /api/overhead-expenses/:id
+PATCH /api/overhead-expenses/:id
 
 DELETE /api/overhead-expenses/:id`
 
@@ -660,13 +660,13 @@ json
 
 http
 
-`GET    /api/performer-expenses
+`GET /api/performer-expenses
 
-GET    /api/performer-expenses/:id
+GET /api/performer-expenses/:id
 
-POST   /api/performer-expenses
+POST /api/performer-expenses
 
-PATCH  /api/performer-expenses/:id
+PATCH /api/performer-expenses/:id
 
 DELETE /api/performer-expenses/:id`
 
@@ -686,15 +686,15 @@ json
 
 `{
 
-"booking_performer_id": "uuid",     // Which gig assignment?
+"booking_performer_id": "uuid", // Which gig assignment?
 
-"performer_id": "uuid",             // Which performer?
+"performer_id": "uuid", // Which performer?
 
 "amount": 75.00,
 
 "description": "Gas $45, dinner $30",
 
-"expense_date": "2025-10-20"       // Usually = event date
+"expense_date": "2025-10-20" // Usually = event date
 
 }`
 
@@ -704,7 +704,7 @@ json
 - **Phase 1.5:** Performers can log their own expenses only
 
 **Note:** These are NOT business reimbursements. These are the performer's personal costs they track to understand their net profit,
-  "notes": "Purchased at Guitar Center"
+"notes": "Purchased at Guitar Center"
 }`
 
 ---

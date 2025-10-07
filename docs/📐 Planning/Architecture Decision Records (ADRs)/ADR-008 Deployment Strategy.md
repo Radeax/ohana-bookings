@@ -188,20 +188,20 @@ Requirements:
 ### Risks
 
 - **Railway pricing changes**: Could get more expensive
-    - *Mitigation*: Monitor usage, can migrate to [Fly.io](http://Fly.io) or AWS if needed
+  - _Mitigation_: Monitor usage, can migrate to [Fly.io](http://Fly.io) or AWS if needed
 - **Outages**: Dependent on Railway uptime
-    - *Mitigation*: Railway has good SLA; can move to AWS later if business-critical
+  - _Mitigation_: Railway has good SLA; can move to AWS later if business-critical
 
 ## Follow-up Actions
 
-- [ ]  Create Railway account and project
-- [ ]  Add PostgreSQL addon in Railway
-- [ ]  Connect GitHub repo to Railway
-- [ ]  Configure environment variables in Railway
-- [ ]  Set up custom domain for API (if needed)
-- [ ]  Create Cloudflare Pages project
-- [ ]  Connect frontend repo to Cloudflare Pages
-- [ ]  Configure build command: `pnpm build`
-- [ ]  Set up API URL environment variable in Cloudflare
-- [ ]  Test deployment pipeline
-- [ ]  Document deployment process in README
+- [ ] Create Railway account and project
+- [ ] Add PostgreSQL addon in Railway
+- [ ] Connect GitHub repo to Railway
+- [ ] Configure environment variables in Railway
+- [ ] Set up custom domain for API (if needed)
+- [ ] Create Cloudflare Pages project
+- [ ] Connect frontend repo to Cloudflare Pages
+- [ ] Configure build command: `pnpm build`
+- [ ] Set up API URL environment variable in Cloudflare
+- [ ] Test deployment pipeline
+- [ ] Document deployment process in README

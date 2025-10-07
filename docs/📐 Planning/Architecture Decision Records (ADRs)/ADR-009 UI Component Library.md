@@ -137,12 +137,12 @@ pnpm add primevue primeicons
 
 ```tsx
 // main.ts
-import PrimeVue from 'primevue/config';
-import 'primevue/resources/themes/lara-light-blue/theme.css';
-import 'primevue/resources/primevue.min.css';
-import 'primeicons/primeicons.css';
+import PrimeVue from 'primevue/config'
+import 'primevue/resources/themes/lara-light-blue/theme.css'
+import 'primevue/resources/primevue.min.css'
+import 'primeicons/primeicons.css'
 
-app.use(PrimeVue);
+app.use(PrimeVue)
 ```
 
 ### Key Components We'll Use
@@ -193,16 +193,16 @@ app.use(PrimeVue);
 ### Risks
 
 - **Design limitations**: May hit styling walls
-    - *Mitigation*: PrimeVue has theming system; can customize. If needed, can migrate specific components to custom ones
+  - _Mitigation_: PrimeVue has theming system; can customize. If needed, can migrate specific components to custom ones
 - **Aesthetic concerns**: Might not wow users visually
-    - *Mitigation*: This is an internal tool; functionality > aesthetics. Can improve design in Phase 2
+  - _Mitigation_: This is an internal tool; functionality > aesthetics. Can improve design in Phase 2
 
 ## Follow-up Actions
 
-- [ ]  Install PrimeVue and PrimeIcons
-- [ ]  Configure Lara theme
-- [ ]  Create example DataTable for inquiries list
-- [ ]  Set up Toast service for notifications
-- [ ]  Create form examples with PrimeVue inputs
-- [ ]  Configure ConfirmDialog for delete confirmations
-- [ ]  Document common component patterns in style guide
+- [ ] Install PrimeVue and PrimeIcons
+- [ ] Configure Lara theme
+- [ ] Create example DataTable for inquiries list
+- [ ] Set up Toast service for notifications
+- [ ] Create form examples with PrimeVue inputs
+- [ ] Configure ConfirmDialog for delete confirmations
+- [ ] Document common component patterns in style guide

@@ -10,12 +10,12 @@
 
 ### Project Setup
 
-- [ ]  Initialize monorepo (pnpm + Turborepo)
-- [ ]  Create folder structure (apps/api, apps/frontend, packages/)
-- [ ]  Set up Docker Compose (PostgreSQL + Redis)
-- [ ]  Install Drizzle ORM
-- [ ]  Configure dev environment (ESLint, Prettier, .env)
-- [ ]  Create GitHub repo + initial commit
+- [ ] Initialize monorepo (pnpm + Turborepo)
+- [ ] Create folder structure (apps/api, apps/frontend, packages/)
+- [ ] Set up Docker Compose (PostgreSQL + Redis)
+- [ ] Install Drizzle ORM
+- [ ] Configure dev environment (ESLint, Prettier, .env)
+- [ ] Create GitHub repo + initial commit
 
 **Milestone:** ✅ Monorepo running, database connected
 
@@ -25,13 +25,13 @@
 
 ### Authentication System
 
-- [ ]  Create users schema
-- [ ]  Run migration + seed admin user
-- [ ]  Install auth packages (@nestjs/passport, jwt, bcrypt)
-- [ ]  Implement JWT strategy + refresh tokens
-- [ ]  Create auth endpoints (login, logout, refresh, me)
-- [ ]  Create guards and decorators
-- [ ]  Test with Postman (all auth flows)
+- [ ] Create users schema
+- [ ] Run migration + seed admin user
+- [ ] Install auth packages (@nestjs/passport, jwt, bcrypt)
+- [ ] Implement JWT strategy + refresh tokens
+- [ ] Create auth endpoints (login, logout, refresh, me)
+- [ ] Create guards and decorators
+- [ ] Test with Postman (all auth flows)
 
 **Milestone:** ✅ Can log in, auth guards working
 
@@ -41,13 +41,13 @@
 
 ### Core Schemas & CRUD
 
-- [ ]  Create schemas (clients, packages, performers, inquiries, quote_history)
-- [ ]  Run migrations
-- [ ]  Generate NestJS modules (clients, packages, performers, inquiries)
-- [ ]  Implement CRUD operations for all entities
-- [ ]  Add validation (DTOs with class-validator)
-- [ ]  Create global exception filter
-- [ ]  Test all CRUD with Postman
+- [ ] Create schemas (clients, packages, performers, inquiries, quote_history)
+- [ ] Run migrations
+- [ ] Generate NestJS modules (clients, packages, performers, inquiries)
+- [ ] Implement CRUD operations for all entities
+- [ ] Add validation (DTOs with class-validator)
+- [ ] Create global exception filter
+- [ ] Test all CRUD with Postman
 
 **Milestone:** ✅ All core entities CRUD working, tested, validated
 
@@ -57,20 +57,20 @@
 
 ### Monday, Oct X
 
-*What I worked on:*
+_What I worked on:_
 
-*Blockers:*
+_Blockers:_
 
-*Tomorrow:*
+_Tomorrow:_
 
 ---
 
 ## Notes & Snippets
 
-*Add useful code snippets, commands, or notes here as you work*
+_Add useful code snippets, commands, or notes here as you work_
 
 ---
 
 ## Questions
 
-*Track questions that come up during development*
+_Track questions that come up during development_

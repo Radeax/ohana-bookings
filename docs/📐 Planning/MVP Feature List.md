@@ -14,11 +14,11 @@
 
 - ✅ Manual entry of inquiries (from any source)
 - ✅ Track inquiry fields:
-    - Client name, email, phone
-    - Event date/time
-    - Location (city/venue)
-    - Event type (wedding, corporate, etc.)
-    - Notes
+  - Client name, email, phone
+  - Event date/time
+  - Location (city/venue)
+  - Event type (wedding, corporate, etc.)
+  - Notes
 - ✅ Inquiry status: `New` → `Quoted` → `Confirmed` → `Lost`
 - ✅ Track WHO was quoted (even if they don't book)
 - ✅ Admin notes per inquiry
@@ -64,19 +64,19 @@
 - ✅ Payment methods (check, Venmo, PayPal, card, GigSalad, etc.)
 - ✅ Mark invoice sent (yes/no + date, using PayPal invoicing)
 - ✅ Financial dashboard:
-    - Revenue (client payments)
-    - Business Expenses (performer payouts + overhead)
-    - Business Profit (revenue - expenses)
-    - Outstanding client payments
-    - Outstanding performer payouts
+  - Revenue (client payments)
+  - Business Expenses (performer payouts + overhead)
+  - Business Profit (revenue - expenses)
+  - Outstanding client payments
+  - Outstanding performer payouts
 
 **Performer Level (Personal View):**
 
 - ✅ Performers can log personal expenses (gas, food, parking) for gigs they perform
 - ✅ Performer dashboard shows:
-    - Gross Pay (total payouts from gigs)
-    - Personal Expenses (costs they logged)
-    - Net Take-Home (gross - expenses)
+  - Gross Pay (total payouts from gigs)
+  - Personal Expenses (costs they logged)
+  - Net Take-Home (gross - expenses)
 - ✅ **Phase 1:** Admins log expenses for any performer
 - ✅ **Phase 1.5:** Performers log their own expenses
 

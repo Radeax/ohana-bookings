@@ -44,9 +44,9 @@
 
 **This Week (Week 1):** Backend Foundation
 
-- [ ]  Monday-Tuesday: Project setup, monorepo, Docker
-- [ ]  Wednesday-Thursday: Authentication system
-- [ ]  Friday-Sunday: Core schemas & CRUD
+- [ ] Monday-Tuesday: Project setup, monorepo, Docker
+- [ ] Wednesday-Thursday: Authentication system
+- [ ] Friday-Sunday: Core schemas & CRUD
 
 **Next Milestone:** Auth working, tested with Postman
 
@@ -54,13 +54,13 @@
 
 ## 🚧 Active Blockers
 
-*None currently - update as blockers arise*
+_None currently - update as blockers arise_
 
 ---
 
 ## ❓ Questions to Resolve
 
-*Add questions as they come up during development*
+_Add questions as they come up during development_
 
 ---
 

@@ -1,9 +1,9 @@
-import js from "@eslint/js";
-import eslintConfigPrettier from "eslint-config-prettier";
-import tseslint from "typescript-eslint";
-import pluginVue from "eslint-plugin-vue";
-import globals from "globals";
-import { config as baseConfig } from "./base.js";
+import js from '@eslint/js'
+import eslintConfigPrettier from 'eslint-config-prettier'
+import tseslint from 'typescript-eslint'
+import pluginVue from 'eslint-plugin-vue'
+import globals from 'globals'
+import { config as baseConfig } from './base.js'
 
 /**
  * A custom ESLint configuration for Vue 3 applications.
@@ -15,7 +15,7 @@ export const vueConfig = [
   js.configs.recommended,
   eslintConfigPrettier,
   ...tseslint.configs.recommended,
-  ...pluginVue.configs["flat/recommended"],
+  ...pluginVue.configs['flat/recommended'],
   {
     languageOptions: {
       globals: {
@@ -24,13 +24,13 @@ export const vueConfig = [
       },
       parserOptions: {
         parser: tseslint.parser,
-        ecmaVersion: "latest",
-        sourceType: "module",
+        ecmaVersion: 'latest',
+        sourceType: 'module',
       },
     },
   },
   {
-    files: ["*.vue", "**/*.vue"],
+    files: ['*.vue', '**/*.vue'],
     languageOptions: {
       parserOptions: {
         parser: tseslint.parser,
@@ -39,8 +39,14 @@ export const vueConfig = [
   },
   {
     rules: {
-      "vue/multi-word-component-names": "off",
-      "vue/no-v-html": "warn",
+      'vue/multi-word-component-names': 'off',
+      'vue/no-v-html': 'warn',
+      // Disable Vue formatting rules that conflict with Prettier
+      'vue/max-attributes-per-line': 'off',
+      'vue/html-self-closing': 'off',
+      'vue/singleline-html-element-content-newline': 'off',
+      'vue/html-indent': 'off',
+      'vue/html-closing-bracket-newline': 'off',
     },
   },
-];
+]

@@ -10,6 +10,6 @@ const config = {
   printWidth: 100,
   arrowParens: 'always',
   endOfLine: 'lf',
-};
+}
 
-export default config;
+export default config

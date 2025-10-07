@@ -57,21 +57,21 @@ FRONTEND_URL=(Cloudflare Pages URL)
 
 ### Staging
 
-- [ ]  Create Railway project
-- [ ]  Add PostgreSQL plugin
-- [ ]  Add Redis plugin
-- [ ]  Configure environment variables
-- [ ]  Connect GitHub repo (develop branch)
-- [ ]  Deploy and test
-- [ ]  Run seed data
+- [ ] Create Railway project
+- [ ] Add PostgreSQL plugin
+- [ ] Add Redis plugin
+- [ ] Configure environment variables
+- [ ] Connect GitHub repo (develop branch)
+- [ ] Deploy and test
+- [ ] Run seed data
 
 ### Production
 
-- [ ]  Create Railway project (separate from staging)
-- [ ]  Add PostgreSQL plugin (production tier)
-- [ ]  Add Redis plugin
-- [ ]  Configure environment variables
-- [ ]  Connect GitHub repo (main branch)
-- [ ]  Enable automatic backups
-- [ ]  Deploy and test
-- [ ]  Create admin user
+- [ ] Create Railway project (separate from staging)
+- [ ] Add PostgreSQL plugin (production tier)
+- [ ] Add Redis plugin
+- [ ] Configure environment variables
+- [ ] Connect GitHub repo (main branch)
+- [ ] Enable automatic backups
+- [ ] Deploy and test
+- [ ] Create admin user

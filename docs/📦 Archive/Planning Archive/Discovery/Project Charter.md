@@ -49,17 +49,17 @@ Ohana of Polynesia currently manages event bookings, performer schedules, and cl
 
 ### **4. Milestones & Timeline**
 
-*Estimated, to be refined after requirements review*
+_Estimated, to be refined after requirements review_
 
-| Milestone | Target Date |
-| --- | --- |
-| Requirements & Design | 2025-08-01 |
-| MVP Backend/API Development | 2025-09-01 |
-| MVP Frontend Development | 2025-10-01 |
-| Internal Alpha Testing | 2025-10-15 |
-| Performer Portal (Phase 2) | 2025-11-01 |
-| Client Communication Automation | 2025-12-01 |
-| Invoicing/Payments (Phase 2/3) | 2026-01-01 |
+| Milestone                       | Target Date |
+| ------------------------------- | ----------- |
+| Requirements & Design           | 2025-08-01  |
+| MVP Backend/API Development     | 2025-09-01  |
+| MVP Frontend Development        | 2025-10-01  |
+| Internal Alpha Testing          | 2025-10-15  |
+| Performer Portal (Phase 2)      | 2025-11-01  |
+| Client Communication Automation | 2025-12-01  |
+| Invoicing/Payments (Phase 2/3)  | 2026-01-01  |
 
 ---
 

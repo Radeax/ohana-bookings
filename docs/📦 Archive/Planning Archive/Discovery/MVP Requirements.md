@@ -115,7 +115,7 @@ Ohana of Polynesia manages dance entertainment bookings for private and corporat
 
 ## 7. **Milestones & Timeline**
 
-*(See Project Charter for full schedule. MVP target: 2025-10-15)*
+_(See Project Charter for full schedule. MVP target: 2025-10-15)_
 
 ---
 

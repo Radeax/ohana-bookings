@@ -184,20 +184,20 @@ axios.interceptors.response.use(
 ### Risks
 
 - **Token theft**: If access token stolen, valid for 15 minutes
-    - *Mitigation*: Short expiry, HTTPS only, don't store in localStorage
+  - _Mitigation_: Short expiry, HTTPS only, don't store in localStorage
 - **Refresh token theft**: If stolen from cookie, can generate access tokens
-    - *Mitigation*: httpOnly cookie, token rotation, HTTPS, can blacklist refresh tokens
+  - _Mitigation_: httpOnly cookie, token rotation, HTTPS, can blacklist refresh tokens
 - **Logout doesn't immediately invalidate**: Access tokens valid until expiry
-    - *Mitigation*: 15min expiry acceptable; can add token blacklist if needed
+  - _Mitigation_: 15min expiry acceptable; can add token blacklist if needed
 
 ## Follow-up Actions
 
-- [ ]  Install NestJS packages: `@nestjs/jwt @nestjs/passport passport passport-jwt`
-- [ ]  Create `AuthModule` with JWT strategy
-- [ ]  Implement login endpoint (returns access + refresh tokens)
-- [ ]  Implement refresh endpoint
-- [ ]  Create `@UseGuards(JwtAuthGuard)` decorator for protected routes
-- [ ]  Create `@Roles()` decorator for role-based access
-- [ ]  Implement frontend auth store (Pinia)
-- [ ]  Create axios interceptor for automatic token refresh
-- [ ]  Add logout flow (clear refresh token cookie)
+- [ ] Install NestJS packages: `@nestjs/jwt @nestjs/passport passport passport-jwt`
+- [ ] Create `AuthModule` with JWT strategy
+- [ ] Implement login endpoint (returns access + refresh tokens)
+- [ ] Implement refresh endpoint
+- [ ] Create `@UseGuards(JwtAuthGuard)` decorator for protected routes
+- [ ] Create `@Roles()` decorator for role-based access
+- [ ] Implement frontend auth store (Pinia)
+- [ ] Create axios interceptor for automatic token refresh
+- [ ] Add logout flow (clear refresh token cookie)

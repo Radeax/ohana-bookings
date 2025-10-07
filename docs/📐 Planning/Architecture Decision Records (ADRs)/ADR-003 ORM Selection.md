@@ -93,17 +93,17 @@ We need an ORM/query builder for the NestJS backend to interact with PostgreSQL.
 
 ```tsx
 // Example Drizzle schema
-import { pgTable, uuid, varchar, timestamp } from 'drizzle-orm/pg-core';
+import { pgTable, uuid, varchar, timestamp } from 'drizzle-orm/pg-core'
 
 export const users = pgTable('users', {
   id: uuid('id').primaryKey().defaultRandom(),
   email: varchar('email', { length: 255 }).notNull().unique(),
   firstName: varchar('first_name', { length: 100 }).notNull(),
   createdAt: timestamp('created_at').defaultNow().notNull(),
-});
+})
 
 // Type inference works automatically
-type User = typeof users.$inferSelect;
+type User = typeof users.$inferSelect
 ```
 
 **NestJS Integration:**
@@ -132,16 +132,16 @@ type User = typeof users.$inferSelect;
 ### Risks
 
 - **Learning curve**: Team (future contributors) may be unfamiliar
-    - *Mitigation*: Drizzle docs are excellent; SQL knowledge transfers directly
+  - _Mitigation_: Drizzle docs are excellent; SQL knowledge transfers directly
 - **Breaking changes**: Newer library, API could change
-    - *Mitigation*: Library is stable; major patterns unlikely to change
+  - _Mitigation_: Library is stable; major patterns unlikely to change
 
 ## Follow-up Actions
 
-- [ ]  Install Drizzle ORM: `pnpm add drizzle-orm pg`
-- [ ]  Install Drizzle Kit: `pnpm add -D drizzle-kit`
-- [ ]  Create `DatabaseModule` in NestJS
-- [ ]  Define initial schema in `src/db/schema/`
-- [ ]  Configure Drizzle migrations
-- [ ]  Create example repository service pattern
-- [ ]  Document query patterns in code
+- [ ] Install Drizzle ORM: `pnpm add drizzle-orm pg`
+- [ ] Install Drizzle Kit: `pnpm add -D drizzle-kit`
+- [ ] Create `DatabaseModule` in NestJS
+- [ ] Define initial schema in `src/db/schema/`
+- [ ] Configure Drizzle migrations
+- [ ] Create example repository service pattern
+- [ ] Document query patterns in code

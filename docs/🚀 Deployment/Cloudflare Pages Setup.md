@@ -50,18 +50,18 @@ VITE_API_URL=(Railway production API URL)
 
 ### Staging
 
-- [ ]  Create Cloudflare Pages project
-- [ ]  Connect GitHub repo (develop branch)
-- [ ]  Configure build settings
-- [ ]  Set environment variables
-- [ ]  Deploy and test
+- [ ] Create Cloudflare Pages project
+- [ ] Connect GitHub repo (develop branch)
+- [ ] Configure build settings
+- [ ] Set environment variables
+- [ ] Deploy and test
 
 ### Production
 
-- [ ]  Create Cloudflare Pages project
-- [ ]  Connect GitHub repo (main branch)
-- [ ]  Configure build settings
-- [ ]  Set environment variables
-- [ ]  Deploy and test
-- [ ]  Configure custom domain (optional)
-- [ ]  Verify HTTPS working
+- [ ] Create Cloudflare Pages project
+- [ ] Connect GitHub repo (main branch)
+- [ ] Configure build settings
+- [ ] Set environment variables
+- [ ] Deploy and test
+- [ ] Configure custom domain (optional)
+- [ ] Verify HTTPS working

@@ -105,8 +105,8 @@
 
 - **Revenue:** Client deposits + final payments
 - **Business Expenses:**
-    - Performer payouts (what you pay out to all performers)
-    - Overhead expenses (costumes, equipment, subscriptions, marketing)
+  - Performer payouts (what you pay out to all performers)
+  - Overhead expenses (costumes, equipment, subscriptions, marketing)
 - **Business Profit:** Revenue - Business Expenses
 
 **Performer Level (Personal View):**
@@ -130,8 +130,8 @@
 
 - **Revenue:** Client deposits + final payments
 - **Business Expenses:**
-    - Performer payouts (what you pay out to all performers)
-    - Overhead expenses (costumes, equipment, subscriptions, marketing)
+  - Performer payouts (what you pay out to all performers)
+  - Overhead expenses (costumes, equipment, subscriptions, marketing)
 - **Business Profit:** Revenue - Business Expenses
 
 **Performer Level (Personal View):**

@@ -39,9 +39,9 @@ Let me walk through each one:
 **Questions:**
 
 1. Should bookers and admins be the same person with different permissions, or separate accounts?
-    1. *Is there a better name for “bookers”? But yes, all admins are bookers, but not all bookers will be admins.*
+   1. _Is there a better name for “bookers”? But yes, all admins are bookers, but not all bookers will be admins._
 2. For Phase 1, you're the only admin - should we even have multiple admin accounts, or just one hardcoded login?
-    1. *We can support multiple admin accounts.*
+   1. _We can support multiple admin accounts._
 
 ---
 
@@ -73,11 +73,11 @@ Let me walk through each one:
 **Questions:**
 
 1. Should we track the full address up front, or just city/venue for inquiries?
-    1. *City/venue required for inquiries, optional full address.*
+   1. _City/venue required for inquiries, optional full address._
 2. Do you want to track multiple quotes per inquiry, or just the latest one?
-    1. *Could keep a log of past inquiries, in case we update a quote (ie, client has a low budget)*
+   1. _Could keep a log of past inquiries, in case we update a quote (ie, client has a low budget)_
 3. Should we have a separate "quoted_package" field to track what you offered?
-    1. *A quoted_package could prefill some of the other values, like `quoted_amount`*
+   1. _A quoted_package could prefill some of the other values, like `quoted_amount`_
 
 ---
 
@@ -111,11 +111,11 @@ Let me walk through each one:
 **Questions:**
 
 1. Should deposit and final payment have separate payment methods, or is it always the same?
-    1. *Some people pay the deposit and final balance  using the same payment method (paypal invoice, mailed check) but sometimes they might pay the rest of the balance in cash.*
+   1. _Some people pay the deposit and final balance using the same payment method (paypal invoice, mailed check) but sometimes they might pay the rest of the balance in cash._
 2. Do you need to track the "invoice sent" date?
-    1. *That would be useful*
+   1. _That would be useful_
 3. Should we store the client contact info here too (denormalized), or always reference the inquiry?
-    1. *Client contact info can be included*
+   1. _Client contact info can be included_
 
 ---
 
@@ -140,9 +140,9 @@ Let me walk through each one:
 **Questions:**
 
 1. Do you need to track performer skills/specialties (hula, fire, etc.)?
-    1. *Yes, it’d be helpful*
+   1. _Yes, it’d be helpful_
 2. Should we track their default rate, or is that negotiated per gig?
-    1. *It’s negotiable, but for the most part we’ll try to stick with the default rate*
+   1. _It’s negotiable, but for the most part we’ll try to stick with the default rate_
 
 ---
 
@@ -165,9 +165,9 @@ Let me walk through each one:
 **Questions:**
 
 1. Is performer payout always tied to a specific booking, or do you sometimes pay them in bulk?
-    1. *Payout is always tied to a specific booking.*
+   1. _Payout is always tied to a specific booking._
 2. Do different performers get different rates for the same booking?
-    1. *Less experienced performers typically have a different rate. Most performers have similar or the same rate.*
+   1. _Less experienced performers typically have a different rate. Most performers have similar or the same rate._
 
 ---
 
@@ -189,9 +189,9 @@ Let me walk through each one:
 **Questions:**
 
 1. Should expenses be linked to specific bookings, or just general overhead?
-    1. *General overhead, not many expenses per booking*
+   1. _General overhead, not many expenses per booking_
 2. What expense categories do you typically have?
-    1. *Gas, costumes, audio equipment, marketing, subscriptions like TheBash, online services (ie Google Suite)*
+   1. _Gas, costumes, audio equipment, marketing, subscriptions like TheBash, online services (ie Google Suite)_
 
 ---
 
@@ -220,13 +220,13 @@ Let me walk through each one:
 Some things I'm wondering about:
 
 1. **Contacts/Clients Table:** Should we have a separate "clients" table if someone books multiple times?
-    1. *We can have a separate clients table, especially to keep track of new/repeat clients*
+   1. _We can have a separate clients table, especially to keep track of new/repeat clients_
 2. **Availability Table (Phase 1.5):** For performers to mark dates available/unavailable
-    1. *What are you wondering about regarding this?*
+   1. _What are you wondering about regarding this?_
 3. **Audit Log:** Track who changed what and when?
-    1. *Yes*
+   1. _Yes_
 4. **Quote History:** Track multiple quotes per inquiry?
-    1. *Yes*
+   1. _Yes_
 
 ---
 
@@ -235,7 +235,7 @@ Some things I'm wondering about:
 Please review each table and answer the questions I've marked. Also:
 
 1. **What am I missing?** Any other data you need to track?
-    1. *Maybe a packages/offering/services table that comes with a default rate and other values*
+   1. _Maybe a packages/offering/services table that comes with a default rate and other values_
 2. **What's wrong?** Any fields that don't match your workflow?
 3. **What's overkill?** Anything we can simplify for Phase 1?
 

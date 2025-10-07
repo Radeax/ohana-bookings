@@ -21,12 +21,14 @@ Each package and application is 100% [TypeScript](https://www.typescriptlang.org
 ### Tech Stack
 
 **Backend:**
+
 - NestJS - Node.js framework
 - PostgreSQL - Database
 - Redis - Cache & sessions
 - Drizzle ORM - Type-safe database queries
 
 **Frontend:**
+
 - Vue 3 - UI framework
 - Vite - Build tool & dev server
 - Pinia Colada - State management & data fetching
@@ -34,6 +36,7 @@ Each package and application is 100% [TypeScript](https://www.typescriptlang.org
 - Vue Router - Client-side routing
 
 **Development:**
+
 - TypeScript - Static type-safety
 - ESLint - Code linting
 - Prettier - Code formatting
@@ -42,6 +45,7 @@ Each package and application is 100% [TypeScript](https://www.typescriptlang.org
 - Turborepo - Monorepo build system
 
 **Deployment:**
+
 - Docker - Containerization
 - Railway - API hosting
 - Cloudflare Pages - Frontend hosting
@@ -100,28 +104,33 @@ pnpm format
 ### Getting Started
 
 1. **Clone the repository**
+
    ```bash
    git clone <repository-url>
    cd ohana-bookings
    ```
 
 2. **Install dependencies**
+
    ```bash
    pnpm install
    ```
 
 3. **Set up environment variables**
+
    ```bash
    cp .env.example .env
    # Edit .env with your configuration
    ```
 
 4. **Start Docker services**
+
    ```bash
    docker compose -f compose.dev.yaml up -d
    ```
 
 5. **Run development servers**
+
    ```bash
    pnpm dev
    ```
@@ -191,6 +200,7 @@ docker compose up -d
 ## Useful Links
 
 **Frameworks & Tools:**
+
 - [Turborepo](https://turborepo.com/docs) - Monorepo build system
 - [NestJS](https://docs.nestjs.com) - Backend framework
 - [Vue 3](https://vuejs.org/guide/introduction.html) - Frontend framework
@@ -200,6 +210,7 @@ docker compose up -d
 - [pnpm](https://pnpm.io/) - Package manager
 
 **Development:**
+
 - [Drizzle ORM](https://orm.drizzle.team/docs/overview) - Database ORM
 - [Vue Router](https://router.vuejs.org/) - Routing
 

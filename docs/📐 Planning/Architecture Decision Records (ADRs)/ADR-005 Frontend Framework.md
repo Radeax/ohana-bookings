@@ -88,9 +88,9 @@ Key requirements:
   "dependencies": {
     "vue": "^3.4.0",
     "vue-router": "^4.3.0",
-    "@pinia/colada": "^0.x",  // State management
-    "primevue": "^3.x",       // UI components
-    "axios": "^1.6.0"         // HTTP client
+    "@pinia/colada": "^0.x", // State management
+    "primevue": "^3.x", // UI components
+    "axios": "^1.6.0" // HTTP client
   },
   "devDependencies": {
     "vite": "^5.0.0",
@@ -148,17 +148,17 @@ apps/frontend/
 ### Risks
 
 - **Future SSR needs**: What if we need SSR for public pages?
-    - *Mitigation*: Public marketing site is separate repo; can use Nuxt/Astro there
+  - _Mitigation_: Public marketing site is separate repo; can use Nuxt/Astro there
 - **Routing complexity**: Manual routing could get messy
-    - *Mitigation*: Keep routing simple; use route guards for auth
+  - _Mitigation_: Keep routing simple; use route guards for auth
 
 ## Follow-up Actions
 
-- [ ]  Initialize Vite + Vue 3 project with TypeScript
-- [ ]  Configure Vue Router with auth guards
-- [ ]  Set up Pinia Colada for state management (see ADR-007)
-- [ ]  Install and configure PrimeVue (see ADR-009)
-- [ ]  Create API client with axios + types from monorepo
-- [ ]  Set up Tailwind CSS
-- [ ]  Configure ESLint + Prettier
-- [ ]  Create base layout components
+- [ ] Initialize Vite + Vue 3 project with TypeScript
+- [ ] Configure Vue Router with auth guards
+- [ ] Set up Pinia Colada for state management (see ADR-007)
+- [ ] Install and configure PrimeVue (see ADR-009)
+- [ ] Create API client with axios + types from monorepo
+- [ ] Set up Tailwind CSS
+- [ ] Configure ESLint + Prettier
+- [ ] Create base layout components

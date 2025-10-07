@@ -16,8 +16,8 @@ Looking at your pains, here's what I think the MVP should focus on:
 
 Does that feel right, or would you prioritize differently?
 
-- *The #1 problem to solve is having a single source of truth for future/past bookings that can be referenced by clients, admins/bookers (the ones who book, might need a better term), and the performers. And something more sophisticated than Google Sheets and manual texts.*
-- *#2 is to keep track of financial data*
+- _The #1 problem to solve is having a single source of truth for future/past bookings that can be referenced by clients, admins/bookers (the ones who book, might need a better term), and the performers. And something more sophisticated than Google Sheets and manual texts._
+- _#2 is to keep track of financial data_
 
 ---
 
@@ -37,7 +37,7 @@ My recommendation: Start with **(a) manual entry**. You can paste/type inquiries
 
 **Do you agree? Or is the website form critical for MVP?**
 
-- *I agree - currently don’t have a website and GigSalad and TheBash doesn’t have many new inquiries coming in at the moment.*
+- _I agree - currently don’t have a website and GigSalad and TheBash doesn’t have many new inquiries coming in at the moment._
 
 ---
 
@@ -68,11 +68,11 @@ Here's what I'm thinking for MVP:
 **Questions:**
 
 1. Is this list complete, or am I missing critical fields?
-    1. *Because we have limited performers, I confirm performer availability before asking the client to pay a deposit to taking money before knowing if we can provide the service.*
+   1. _Because we have limited performers, I confirm performer availability before asking the client to pay a deposit to taking money before knowing if we can provide the service._
 2. Do you need to track WHO you quoted (even if they don't book)?
-    1. *That would be helpful*
+   1. _That would be helpful_
 3. Should "Quoted" inquiries remind you to follow up after X days?
-    1. *Yes*
+   1. _Yes_
 
 ---
 
@@ -95,7 +95,7 @@ Option B: **Availability tracking**
 
 - My recommendation: Start with **(A)** - just visibility. Add performer logins in Phase 2.
 - But if checking availability is a huge pain, maybe (B) is worth including?
-    - *Yes, let’s go with (B)*
+  - _Yes, let’s go with (B)_
 
 ---
 
@@ -121,11 +121,11 @@ Here's my proposal:
 **Questions:**
 
 1. Do you need to track performer payouts in MVP, or just client payments?
-    1. Both
+   1. Both
 2. Do you invoice clients, or just receive payments?
-    1. *Sometimes just receive payments especially if booked through a booking site like GigSalad, but usually invoice*
+   1. _Sometimes just receive payments especially if booked through a booking site like GigSalad, but usually invoice_
 3. Any other financial data you need to see?
-    1. *The usual - revenue, profit, expenses, etc.*
+   1. _The usual - revenue, profit, expenses, etc._
 
 ---
 
@@ -145,7 +145,7 @@ My recommendation:
 
 **Does this match your vision, or would you change it?**
 
-- *Yes*
+- _Yes_
 
 ---
 
@@ -155,13 +155,13 @@ My recommendation:
 
 Check all that apply:
 
-- [x]  New inquiry (so you don't forget to respond)
-- [x]  Follow up on quoted inquiry after 3 days
-- [x]  Deposit not received X days before event
-- [ ]  Final payment not received X days before event
-    - *While some clients prepay in full, payment is not due until after performance*
-- [x]  Event happening tomorrow (send performer details)
-    - Maybe earlier than a day in advance - a week
+- [x] New inquiry (so you don't forget to respond)
+- [x] Follow up on quoted inquiry after 3 days
+- [x] Deposit not received X days before event
+- [ ] Final payment not received X days before event
+  - _While some clients prepay in full, payment is not due until after performance_
+- [x] Event happening tomorrow (send performer details)
+  - Maybe earlier than a day in advance - a week
 
 **Which 1-2 are most critical for MVP?**
 

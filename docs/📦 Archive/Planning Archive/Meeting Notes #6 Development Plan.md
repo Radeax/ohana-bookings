@@ -68,35 +68,34 @@
 **Two-Level Tracking:**
 
 1. **Business Level (Admin View)**
-    
-    ```
-    Revenue = Client payments
-    Business Expenses = Performer payouts + Overhead
-    Business Profit = Revenue - Expenses
-    ```
-    
+
+   ```
+   Revenue = Client payments
+   Business Expenses = Performer payouts + Overhead
+   Business Profit = Revenue - Expenses
+   ```
+
 2. **Performer Level (Personal View)**
-    
-    ```
-    Gross Pay = Payouts received
-    Personal Expenses = Gas, food, parking (own costs)
-    Net Take-Home = Gross Pay - Personal Expenses
-    ```
-    
+
+   ```
+   Gross Pay = Payouts received
+   Personal Expenses = Gas, food, parking (own costs)
+   Net Take-Home = Gross Pay - Personal Expenses
+   ```
 
 **Key Insight:** Performer expenses are NOT reimbursements. They are personal costs performers track for their own profit calculation.
 
 ### New Tables Added
 
 1. **performer_expenses** (NEW)
-    - Tracks performer personal gig costs
-    - Separate from payouts
-    - Phase 1: Admin can log for anyone
-    - Phase 1.5: Performers log their own
+   - Tracks performer personal gig costs
+   - Separate from payouts
+   - Phase 1: Admin can log for anyone
+   - Phase 1.5: Performers log their own
 2. **overhead_expenses** (BACK IN SCOPE)
-    - Business-level costs (costumes, equipment, subscriptions)
-    - Admin only
-    - Categories: costumes, equipment, subscriptions, marketing, props, other
+   - Business-level costs (costumes, equipment, subscriptions)
+   - Admin only
+   - Categories: costumes, equipment, subscriptions, marketing, props, other
 
 ---
 
@@ -248,18 +247,18 @@ Total Expenses Logged: $1,200
 
 ## Permissions Matrix
 
-| Feature | Admin | Coordinator | Performer (Phase 1.5) |
-| --- | --- | --- | --- |
-| Manage Inquiries | ✅ | ✅ | ❌ |
-| Manage Bookings | ✅ | ✅ | ❌ |
-| Assign Performers | ✅ | ✅ | ❌ |
-| View All Financials | ✅ | ❌ | ❌ |
-| Log Overhead Expenses | ✅ | ❌ | ❌ |
-| Log Any Performer Expense | ✅ (Phase 1) | ❌ | ❌ |
-| Log Own Performer Expense | ✅ | ❌ | ✅ (Phase 1.5) |
-| View Own Payouts/Expenses | ✅ | ❌ | ✅ (Phase 1.5) |
-| View Own Schedule | ✅ | ❌ | ✅ (Phase 1.5) |
-| Manage Users | ✅ | ❌ | ❌ |
+| Feature                   | Admin        | Coordinator | Performer (Phase 1.5) |
+| ------------------------- | ------------ | ----------- | --------------------- |
+| Manage Inquiries          | ✅           | ✅          | ❌                    |
+| Manage Bookings           | ✅           | ✅          | ❌                    |
+| Assign Performers         | ✅           | ✅          | ❌                    |
+| View All Financials       | ✅           | ❌          | ❌                    |
+| Log Overhead Expenses     | ✅           | ❌          | ❌                    |
+| Log Any Performer Expense | ✅ (Phase 1) | ❌          | ❌                    |
+| Log Own Performer Expense | ✅           | ❌          | ✅ (Phase 1.5)        |
+| View Own Payouts/Expenses | ✅           | ❌          | ✅ (Phase 1.5)        |
+| View Own Schedule         | ✅           | ❌          | ✅ (Phase 1.5)        |
+| Manage Users              | ✅           | ❌          | ❌                    |
 
 ---
 
@@ -335,13 +334,13 @@ Total Expenses Logged: $1,200
 **Potential Risks:**
 
 1. **Scope creep** - Adding features during development
-    - *Mitigation:* Stick to the plan, document Phase 2 ideas
+   - _Mitigation:_ Stick to the plan, document Phase 2 ideas
 2. **Backend taking longer than 2 weeks**
-    - *Mitigation:* Use AI copilot, reference past NestJS project
+   - _Mitigation:_ Use AI copilot, reference past NestJS project
 3. **Complexity in financial calculations**
-    - *Mitigation:* Write tests for calc logic, validate with real scenarios
+   - _Mitigation:_ Write tests for calc logic, validate with real scenarios
 4. **Deployment issues**
-    - *Mitigation:* Deploy to staging early (Week 2.5), fix issues before production
+   - _Mitigation:_ Deploy to staging early (Week 2.5), fix issues before production
 
 ---
 

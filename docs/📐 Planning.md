@@ -2,7 +2,7 @@
 
 [MVP Feature List](%F0%9F%93%90%20Planning/MVP%20Feature%20List.md)
 
-[Architecture Decision Records (ADRs)](%F0%9F%93%90%20Planning/Architecture%20Decision%20Records%20(ADRs).md)
+[Architecture Decision Records (ADRs)](<%F0%9F%93%90%20Planning/Architecture%20Decision%20Records%20(ADRs).md>)
 
 [Project Context](%F0%9F%93%90%20Planning/Project%20Context.md)
 

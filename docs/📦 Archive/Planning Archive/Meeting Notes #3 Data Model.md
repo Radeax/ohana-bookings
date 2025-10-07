@@ -111,7 +111,7 @@ performers ──┬─→ booking_performers
 ### Revenue (Money In)
 
 ```sql
-SUM(deposit_amount WHERE deposit_paid) + 
+SUM(deposit_amount WHERE deposit_paid) +
 SUM(final_payment_amount WHERE final_payment_paid)
 ```
 

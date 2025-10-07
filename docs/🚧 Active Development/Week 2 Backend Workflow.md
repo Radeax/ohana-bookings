@@ -10,14 +10,14 @@
 
 ### Bookings Core
 
-- [ ]  Create bookings schema (all payment fields, invoice tracking)
-- [ ]  Run migration
-- [ ]  Generate bookings module
-- [ ]  Implement CRUD endpoints
-- [ ]  Create booking DTO with validation
-- [ ]  Implement inquiry → booking conversion endpoint
-- [ ]  Create payment tracking endpoints (deposit, final, invoice)
-- [ ]  Test all booking flows with Postman
+- [ ] Create bookings schema (all payment fields, invoice tracking)
+- [ ] Run migration
+- [ ] Generate bookings module
+- [ ] Implement CRUD endpoints
+- [ ] Create booking DTO with validation
+- [ ] Implement inquiry → booking conversion endpoint
+- [ ] Create payment tracking endpoints (deposit, final, invoice)
+- [ ] Test all booking flows with Postman
 
 **Milestone:** ✅ Booking creation + payment tracking working
 
@@ -27,14 +27,14 @@
 
 ### Performer Assignments
 
-- [ ]  Create schemas: booking_performers, performer_expenses, overhead_expenses
-- [ ]  Run migrations
-- [ ]  Create assignment endpoints (assign, remove, list)
-- [ ]  Implement conflict detection
-- [ ]  Create payout endpoints (mark paid, bulk pay, list outstanding)
-- [ ]  Create performer expenses endpoints (log, list, update, delete)
-- [ ]  Create overhead expenses endpoints (CRUD, admin only)
-- [ ]  Test all assignment flows
+- [ ] Create schemas: booking_performers, performer_expenses, overhead_expenses
+- [ ] Run migrations
+- [ ] Create assignment endpoints (assign, remove, list)
+- [ ] Implement conflict detection
+- [ ] Create payout endpoints (mark paid, bulk pay, list outstanding)
+- [ ] Create performer expenses endpoints (log, list, update, delete)
+- [ ] Create overhead expenses endpoints (CRUD, admin only)
+- [ ] Test all assignment flows
 
 **Milestone:** ✅ Performer assignments + expenses working
 
@@ -44,14 +44,14 @@
 
 ### Reports & Business Logic
 
-- [ ]  Dashboard endpoint (stats, inquiries, events, deposits)
-- [ ]  Calendar endpoint (bookings by date range)
-- [ ]  Financial reports (business, performer earnings, all performers)
-- [ ]  Payout reports (outstanding, by performer)
-- [ ]  Performer availability endpoint
-- [ ]  Global search endpoint
-- [ ]  Notifications schema + endpoints
-- [ ]  Test all reports with real data
+- [ ] Dashboard endpoint (stats, inquiries, events, deposits)
+- [ ] Calendar endpoint (bookings by date range)
+- [ ] Financial reports (business, performer earnings, all performers)
+- [ ] Payout reports (outstanding, by performer)
+- [ ] Performer availability endpoint
+- [ ] Global search endpoint
+- [ ] Notifications schema + endpoints
+- [ ] Test all reports with real data
 
 **Milestone:** ✅ Complete API working, all endpoints tested
 
@@ -61,42 +61,42 @@
 
 ### Monday
 
-*What I worked on:*
+_What I worked on:_
 
-*Blockers:*
+_Blockers:_
 
 ### Tuesday
 
-*What I worked on:*
+_What I worked on:_
 
 ### Wednesday
 
-*What I worked on:*
+_What I worked on:_
 
 ### Thursday
 
-*What I worked on:*
+_What I worked on:_
 
 ### Friday
 
-*What I worked on:*
+_What I worked on:_
 
 ### Saturday
 
-*What I worked on:*
+_What I worked on:_
 
 ### Sunday
 
-*What I worked on:*
+_What I worked on:_
 
 ---
 
 ## Notes & Snippets
 
-*Add code snippets, commands, solutions here*
+_Add code snippets, commands, solutions here_
 
 ---
 
 ## Questions
 
-*Track questions during development*
+_Track questions during development_

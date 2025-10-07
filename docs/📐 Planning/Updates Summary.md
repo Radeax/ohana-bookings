@@ -155,7 +155,7 @@ Revenue - Expenses = Profit
 ```
 Revenue = Client payments (deposits + finals)
 
-Business Expenses = 
+Business Expenses =
   - Performer payouts (what you pay out)
   - Overhead expenses (costumes, equipment, subscriptions)
 
@@ -184,9 +184,9 @@ Net Take-Home = Gross Pay - Personal Expenses
 2. Set `payout_amount = $200`
 3. After the gig, you log expense: "Gas $45, dinner $30" = $75
 4. Your dashboard shows:
-    - Gross: $200
-    - Expenses: $75
-    - Net: $125
+   - Gross: $200
+   - Expenses: $75
+   - Net: $125
 5. Business sees: Payout expense = $200
 
 ### Use Case 2: External Performer (Phase 1)

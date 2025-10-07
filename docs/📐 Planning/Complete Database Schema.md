@@ -463,7 +463,7 @@ booking_performers ──→ performer_expenses
 **Revenue:**
 
 ```sql
-SELECT 
+SELECT
   SUM(deposit_amount) FILTER (WHERE deposit_paid = true) +
   SUM(final_payment_amount) FILTER (WHERE final_payment_paid = true)
 FROM bookings
@@ -476,9 +476,9 @@ WHERE event_date BETWEEN :start_date AND :end_date
 -- Performer payouts
 SELECT SUM(payout_amount)
 FROM booking_performers
-WHERE paid = true 
+WHERE paid = true
   AND booking_id IN (
-    SELECT id FROM bookings 
+    SELECT id FROM bookings
     WHERE event_date BETWEEN :start_date AND :end_date
   )
 
@@ -1012,7 +1012,7 @@ booking_performers ──→ performer_expenses
 **Revenue:**
 
 ```sql
-SELECT 
+SELECT
   SUM(deposit_amount) FILTER (WHERE deposit_paid = true) +
   SUM(final_payment_amount) FILTER (WHERE final_payment_paid = true)
 FROM bookings
@@ -1025,9 +1025,9 @@ WHERE event_date BETWEEN :start_date AND :end_date
 -- Performer payouts
 SELECT SUM(payout_amount)
 FROM booking_performers
-WHERE paid = true 
+WHERE paid = true
   AND booking_id IN (
-    SELECT id FROM bookings 
+    SELECT id FROM bookings
     WHERE event_date BETWEEN :start_date AND :end_date
   )
 

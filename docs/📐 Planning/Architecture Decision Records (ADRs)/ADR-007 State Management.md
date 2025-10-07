@@ -53,31 +53,35 @@ Pinia Colada is a new library by Eduardo (creator of Pinia) that combines:
 **Example:**
 
 ```tsx
-import { useQuery, useMutation } from '@pinia/colada';
+import { useQuery, useMutation } from '@pinia/colada'
 
 // Server state - auto-cached, auto-refetched
-const { data: bookings, isLoading, error } = useQuery({
+const {
+  data: bookings,
+  isLoading,
+  error,
+} = useQuery({
   key: ['bookings'],
-  query: () => api.getBookings()
-});
+  query: () => api.getBookings(),
+})
 
 // Mutations with auto-invalidation
 const { mutate: createBooking } = useMutation({
   mutation: (data) => api.createBooking(data),
   onSuccess: () => {
     // Auto-invalidate bookings list
-    queryClient.invalidateQueries(['bookings']);
-  }
-});
+    queryClient.invalidateQueries(['bookings'])
+  },
+})
 
 // UI state - same store pattern
-import { defineStore } from 'pinia';
+import { defineStore } from 'pinia'
 
 export const useAuthStore = defineStore('auth', () => {
-  const user = ref(null);
-  const isLoggedIn = computed(() => user.value !== null);
-  return { user, isLoggedIn };
-});
+  const user = ref(null)
+  const isLoggedIn = computed(() => user.value !== null)
+  return { user, isLoggedIn }
+})
 ```
 
 ### Option B: TanStack Query + Pinia
@@ -144,13 +148,13 @@ Consider XState if:
 
 ```tsx
 // Server state with Pinia Colada
-useQuery({ key: ['inquiries'], query: api.getInquiries });
-useQuery({ key: ['bookings'], query: api.getBookings });
-useMutation({ mutation: api.createInquiry });
+useQuery({ key: ['inquiries'], query: api.getInquiries })
+useQuery({ key: ['bookings'], query: api.getBookings })
+useMutation({ mutation: api.createInquiry })
 
 // UI state with Pinia
-const authStore = useAuthStore();      // User session, token
-const uiStore = useUIStore();          // Sidebar open, modal state
+const authStore = useAuthStore() // User session, token
+const uiStore = useUIStore() // Sidebar open, modal state
 ```
 
 **Phase 2 (If Needed):**
@@ -164,11 +168,11 @@ const inquiryMachine = createMachine({
     quoted: { on: { CONFIRM: 'confirmed', LOSE: 'lost' } },
     confirmed: { on: { CREATE_BOOKING: 'booked' } },
     // ...
-  }
-});
+  },
+})
 
 // Use machine for inquiry conversion flow only
-const { state, send } = useMachine(inquiryMachine);
+const { state, send } = useMachine(inquiryMachine)
 ```
 
 ## Consequences
@@ -191,15 +195,15 @@ const { state, send } = useMachine(inquiryMachine);
 ### Risks
 
 - **Pinia Colada immaturity**: Library could have breaking changes
-    - *Mitigation*: Eduardo (creator) is reliable; API is stable; worst case migrate to TanStack Query
+  - _Mitigation_: Eduardo (creator) is reliable; API is stable; worst case migrate to TanStack Query
 - **Workflow complexity**: What if simple state isn't enough?
-    - *Mitigation*: Can add XState for specific flows in Phase 2 without rewriting everything
+  - _Mitigation_: Can add XState for specific flows in Phase 2 without rewriting everything
 
 ## Follow-up Actions
 
-- [ ]  Install Pinia Colada: `pnpm add @pinia/colada`
-- [ ]  Set up Pinia Colada plugin in main.ts
-- [ ]  Create query hooks for API endpoints (inquiries, bookings, etc.)
-- [ ]  Create Pinia stores for UI state (auth, sidebar, modals)
-- [ ]  Document state management patterns in frontend README
-- [ ]  Defer XState decision - revisit after Phase 1 MVP
+- [ ] Install Pinia Colada: `pnpm add @pinia/colada`
+- [ ] Set up Pinia Colada plugin in main.ts
+- [ ] Create query hooks for API endpoints (inquiries, bookings, etc.)
+- [ ] Create Pinia stores for UI state (auth, sidebar, modals)
+- [ ] Document state management patterns in frontend README
+- [ ] Defer XState decision - revisit after Phase 1 MVP

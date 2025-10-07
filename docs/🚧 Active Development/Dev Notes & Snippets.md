@@ -186,4 +186,4 @@ const { mutate: createEntity, isPending } = useMutation({
 
 ## Notes
 
-*Add your own notes, discoveries, and solutions here as you develop*
+_Add your own notes, discoveries, and solutions here as you develop_

@@ -8,7 +8,7 @@ Now let's finalize your technology choices. You've already made some decisions i
 
 ✅ **Backend:** AdonisJS v6
 
-- *I’ll Ues*
+- _I’ll Ues_
 
 ✅ **Architecture:** Monorepo (pnpm + Turborepo)
 

@@ -98,7 +98,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     ports:
-      - "5432:5432"
+      - '5432:5432'
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
@@ -147,16 +147,16 @@ volumes:
 ### Risks
 
 - **Docker complexity**: Contributors must have Docker installed
-    - *Mitigation*: Provide clear setup docs; alternatively, use Railway dev database
+  - _Mitigation_: Provide clear setup docs; alternatively, use Railway dev database
 - **Cost in production**: Managed Postgres costs more than SQLite file
-    - *Mitigation*: Railway hobby plan is $5/month; acceptable for business use
+  - _Mitigation_: Railway hobby plan is $5/month; acceptable for business use
 
 ## Follow-up Actions
 
-- [ ]  Create `docker-compose.yml` for local Postgres
-- [ ]  Document local setup in README
-- [ ]  Configure Drizzle for Postgres connection
-- [ ]  Set up Railway project with Postgres addon
-- [ ]  Configure database connection env vars
-- [ ]  Set up automated backups in production
-- [ ]  Create seed script for local development data
+- [ ] Create `docker-compose.yml` for local Postgres
+- [ ] Document local setup in README
+- [ ] Configure Drizzle for Postgres connection
+- [ ] Set up Railway project with Postgres addon
+- [ ] Configure database connection env vars
+- [ ] Set up automated backups in production
+- [ ] Create seed script for local development data

@@ -1,7 +1,6 @@
 # Design kickoff — Google Stitch AI
 
 > Goal: generate first-pass UI designs for Ohana Bookings using Google Stitch AI, then iterate toward high-fidelity mockups.
-> 
 
 ### Product snapshot
 
@@ -59,35 +58,35 @@ Copy one prompt at a time into Google Stitch AI to generate style options.
 
 Use these prompts to generate first drafts of each screen.
 
-- 1) Landing
+- 1. Landing
 
 "Design a welcoming landing screen for Ohana Bookings. Hero with tagline 'Plan. Book. Relax.' Quick actions: Browse Services, View Calendar, Sign In. Feature cards highlighting 'Local pros', 'Transparent pricing', 'Flexible rescheduling'. Footer links. Warm ocean imagery, airy layout, mobile-first."
 
-- 2) Services list
+- 2. Services list
 
 "Design a services list screen with filters (Category, Price, Rating), search bar, and service cards with thumbnail, title, short description, duration, price, rating. Sticky filter bar on scroll. Include empty and loading states."
 
-- 3) Service detail
+- 3. Service detail
 
 "Design a service detail page with gallery, description, provider info, reviews snippet, duration, add-ons, and prominent 'Book now' call to action. Show next available dates and times, and policies."
 
-- 4) Booking flow — select time
+- 4. Booking flow — select time
 
 "Design a time selection step with month calendar and time slot selector. Allow switching between list and grid of time slots. Show timezone, availability badges, and validation for conflicts."
 
-- 5) Booking flow — details and payment
+- 5. Booking flow — details and payment
 
 "Design a form for contact details, notes, add-ons, coupon code, and payment summary. Integrate payment section with card fields and Apple Pay / Google Pay buttons. Show total, fees, and refund policy."
 
-- 6) Booking confirmation
+- 6. Booking confirmation
 
 "Design a confirmation screen with success state, booking summary, calendar add button, share options, and recommended related services."
 
-- 7) Account — bookings
+- 7. Account — bookings
 
 "Design a bookings list with upcoming and past tabs, each item with status, date/time, service, provider, and quick actions (reschedule, cancel, contact)."
 
-- 8) Admin — calendar
+- 8. Admin — calendar
 
 "Design a staff calendar with week and month views, color-coded services, drag to create, click to edit booking, and side panel with details. Include filters by staff and service."
 

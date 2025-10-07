@@ -29,8 +29,8 @@
 - **Framework:** Vue 3 (Composition API)
 - **UI Library:** PrimeVue
 - **State Management:**
-    - Pinia (global UI state: auth, sidebar, modals)
-    - Pinia Colada (server state: API data fetching)
+  - Pinia (global UI state: auth, sidebar, modals)
+  - Pinia Colada (server state: API data fetching)
 - **HTTP Client:** Axios
 - **Routing:** Vue Router
 - **Styling:** Tailwind CSS + PrimeVue themes
@@ -41,10 +41,10 @@
 - **Backend Hosting:** Railway (API + PostgreSQL + Redis)
 - **Frontend Hosting:** Cloudflare Pages
 - **Repository:** Monorepo (`ohana-bookings`)
-    - `/apps/api` - NestJS
-    - `/apps/frontend` - Vue 3
-    - `/packages/types` - Shared TypeScript types
-    - `/packages/config` - Shared configs
+  - `/apps/api` - NestJS
+  - `/apps/frontend` - Vue 3
+  - `/packages/types` - Shared TypeScript types
+  - `/packages/config` - Shared configs
 - **Monorepo Tool:** Turborepo + pnpm workspaces
 - **CI/CD:** GitHub Actions
 
@@ -219,7 +219,7 @@ ohana-marketing/                   # Separate repo (future)
 Docker Compose: PostgreSQL + Redis
 NestJS dev server: port 3000
 
-# Frontend  
+# Frontend
 Vite dev server: port 5173
 
 # Monorepo
