@@ -122,12 +122,14 @@ pnpm format:check
 3. **Set up environment variables**
 
    Run the automated setup script:
+
    ```bash
    chmod +x setup.sh
    ./setup.sh
    ```
 
    Or manually:
+
    ```bash
    cp .env.example .env
    # Edit .env with your configuration
@@ -191,6 +193,7 @@ This project uses GitHub Actions for continuous integration. On every push and p
 - **Linting** - Checks code quality with ESLint
 
 Future checks (commented out until implementation):
+
 - Type checking with TypeScript
 - Unit and E2E tests
 - Production builds
