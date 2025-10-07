@@ -11,7 +11,7 @@ Booking management system for Ohana of Polynesia.
     │   ├── api                       # NestJS backend API
     │   └── web                       # Vue 3 + Vite frontend
     └── packages
-        ├── @repo/api                 # Shared NestJS resources & types
+        ├── @repo/types               # Shared TypeScript types
         ├── @repo/eslint-config       # ESLint configurations (includes Prettier)
         ├── @repo/jest-config         # Jest configurations
         └── @repo/typescript-config   # TypeScript configurations
@@ -91,14 +91,17 @@ pnpm run lint
 ```bash
 # Format all supported files
 pnpm format
+
+# Check formatting without modifying files
+pnpm format:check
 ```
 
 ## Development Setup
 
 ### Prerequisites
 
-- Node.js 18+
-- pnpm 8+
+- Node.js 22+
+- pnpm 10+
 - Docker & Docker Compose
 
 ### Getting Started
@@ -118,6 +121,13 @@ pnpm format
 
 3. **Set up environment variables**
 
+   Run the automated setup script:
+   ```bash
+   chmod +x setup.sh
+   ./setup.sh
+   ```
+
+   Or manually:
    ```bash
    cp .env.example .env
    # Edit .env with your configuration
@@ -155,7 +165,7 @@ ohana-bookings/
 │       ├── public/
 │       └── package.json
 ├── packages/
-│   ├── api/                  # Shared backend code
+│   ├── types/                # Shared TypeScript types
 │   ├── eslint-config/        # Shared ESLint configs
 │   ├── jest-config/          # Shared Jest configs
 │   └── typescript-config/    # Shared TypeScript configs
@@ -164,10 +174,26 @@ ohana-bookings/
 ├── Dockerfile                # Production Dockerfile
 ├── Dockerfile.dev            # Development Dockerfile
 ├── nginx.conf                # Nginx config for Vue SPA
+├── setup.sh                  # Automated setup script
+├── .github/
+│   └── workflows/
+│       └── ci.yml            # GitHub Actions CI workflow
 ├── turbo.json                # Turborepo configuration
 ├── pnpm-workspace.yaml       # pnpm workspace configuration
 └── package.json              # Root package.json
 ```
+
+## CI/CD
+
+This project uses GitHub Actions for continuous integration. On every push and pull request, the following checks run:
+
+- **Format Check** - Ensures all code is formatted with Prettier
+- **Linting** - Checks code quality with ESLint
+
+Future checks (commented out until implementation):
+- Type checking with TypeScript
+- Unit and E2E tests
+- Production builds
 
 ## Docker Commands
 
